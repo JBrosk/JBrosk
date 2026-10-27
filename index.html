@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CyberAware Hub | Awareness, Pen Testing & Blue Team</title>
+  <meta name="description" content="Free cybersecurity awareness, ethical penetration testing and blue team defense education.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CyberAware Hub | Awareness, Pen Testing & Blue Team">
+  <meta property="og:description" content="Free cybersecurity awareness, ethical penetration testing and blue team defense education.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">&#128274; CyberAware<span>Hub</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <nav id="nav">
+      <a href="#awareness">Awareness</a>
+      <a href="#pentest">Penetration Testing</a>
+      <a href="#blueteam">Blue Team</a>
+      <a href="#tools">Tools</a>
+      <a href="blog.html">Blog</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h1>Think like an attacker.<br>Defend like a pro.</h1>
+      <p>Practical, beginner-friendly cybersecurity education: protect yourself, learn ethical penetration testing, and build strong blue team defenses.</p>
+      <div class="cta">
+        <a class="btn" href="#awareness">Start learning</a>
+        <a class="btn ghost" href="#quiz">Test yourself</a>
+      </div>
+    </section>
+
+    <section id="awareness" class="section">
+      <h2>Cybersecurity Awareness</h2>
+      <p class="lead">Most breaches begin with a human mistake. These habits stop the majority of everyday attacks.</p>
+      <div class="grid">
+        <article class="card"><h3>&#127907; Spot phishing</h3>
+          <ul>
+            <li>Check the real sender address, not just the display name.</li>
+            <li>Hover over links before clicking; look for look-alike domains.</li>
+            <li>Be wary of urgency, threats, or prizes.</li>
+            <li>When in doubt, contact the company through its official channel.</li>
+          </ul></article>
+        <article class="card"><h3>&#128273; Passwords &amp; MFA</h3>
+          <ul>
+            <li>Use long passphrases (14+ characters) and a password manager.</li>
+            <li>Never reuse passwords across accounts.</li>
+            <li>Turn on multi-factor authentication, preferably an authenticator app or security key.</li>
+          </ul></article>
+        <article class="card"><h3>&#128241; Mobile &amp; Wi-Fi safety</h3>
+          <ul>
+            <li>Install apps only from official stores.</li>
+            <li>Avoid sensitive logins on public Wi-Fi; use mobile data or a trusted VPN.</li>
+            <li>Keep phone and apps updated.</li>
+          </ul></article>
+        <article class="card"><h3>&#128190; Backups &amp; updates</h3>
+          <ul>
+            <li>Follow the 3-2-1 rule: 3 copies, 2 media types, 1 offline/offsite.</li>
+            <li>Enable automatic updates for OS, browser and apps.</li>
+            <li>Test restoring backups, not just creating them.</li>
+          </ul></article>
+        <article class="card"><h3>&#128172; Social engineering</h3>
+          <ul>
+            <li>Verify unexpected requests for money, codes or access by a second channel.</li>
+            <li>Never share OTP codes, even with someone claiming to be support.</li>
+            <li>Limit what you post publicly about work and personal life.</li>
+          </ul></article>
+        <article class="card"><h3>&#128184; Mobile money &amp; scams</h3>
+          <ul>
+            <li>Never send money to claim a prize or loan.</li>
+            <li>Confirm payment requests by calling the person directly.</li>
+            <li>Report fraud to your provider immediately.</li>
+          </ul></article>
+      </div>
+    </section>
+
+    <section id="pentest" class="section alt">
+      <h2>Ethical Penetration Testing</h2>
+      <p class="lead">Penetration testing is an <strong>authorized</strong>, scoped simulation of an attack to find weaknesses before criminals do.</p>
+      <div class="notice">&#9888; <strong>Legal &amp; ethical rule:</strong> Only test systems you own or have <em>written permission</em> to test. Unauthorized testing is illegal. Practice in your own lab or on legal training platforms.</div>
+
+      <h3>The 5 phases</h3>
+      <div class="tabs" role="tablist" id="phaseTabs">
+        <button class="tab active" data-tab="p1" role="tab">1. Planning</button>
+        <button class="tab" data-tab="p2" role="tab">2. Recon</button>
+        <button class="tab" data-tab="p3" role="tab">3. Scanning</button>
+        <button class="tab" data-tab="p4" role="tab">4. Exploitation</button>
+        <button class="tab" data-tab="p5" role="tab">5. Reporting</button>
+      </div>
+      <div class="tab-panel active" id="p1"><p><strong>Planning &amp; scoping.</strong> Define targets, rules of engagement, testing windows, and sign a written authorization. Agree what is out of bounds and how to handle sensitive data.</p></div>
+      <div class="tab-panel" id="p2"><p><strong>Reconnaissance.</strong> Gather information about the target from public sources (OSINT): domains, technologies, exposed services, public staff information. Passive recon avoids touching the target directly.</p></div>
+      <div class="tab-panel" id="p3"><p><strong>Scanning &amp; enumeration.</strong> Identify live hosts, open ports, services and known vulnerabilities, using tools such as Nmap and vulnerability scanners, within the agreed scope.</p></div>
+      <div class="tab-panel" id="p4"><p><strong>Exploitation &amp; post-exploitation.</strong> Safely validate that weaknesses are real and show business impact, while avoiding damage or downtime. Document every action for traceability.</p></div>
+      <div class="tab-panel" id="p5"><p><strong>Reporting &amp; retest.</strong> Deliver an executive summary, technical findings ranked by risk, evidence, and clear remediation steps. Retest after fixes to confirm closure.</p></div>
+
+      <h3>Frameworks &amp; learning path</h3>
+      <div class="grid">
+        <article class="card"><h3>Standards to know</h3>
+          <ul><li>OWASP Top 10 (web apps)</li><li>PTES (Penetration Testing Execution Standard)</li><li>NIST SP 800-115</li><li>MITRE ATT&amp;CK</li></ul></article>
+        <article class="card"><h3>Common tools (overview)</h3>
+          <ul><li>Nmap: network discovery</li><li>Wireshark: packet analysis</li><li>Burp Suite: web testing</li><li>Metasploit: exploit framework (lab use)</li></ul></article>
+        <article class="card"><h3>Safe places to practice</h3>
+          <ul><li>Your own VirtualBox lab (Kali Linux + intentionally vulnerable VMs)</li><li>TryHackMe and Hack The Box</li><li>OWASP Juice Shop and DVWA</li></ul></article>
+        <article class="card"><h3>Certifications</h3>
+          <ul><li>CompTIA Security+ and PenTest+</li><li>CEH</li><li>eJPT, then OSCP</li></ul></article>
+      </div>
+    </section>
+
+    <section id="blueteam" class="section">
+      <h2>Blue Team: Defending the Network</h2>
+      <p class="lead">The blue team detects, responds to and prevents attacks. Pen testers show where the holes are; blue teamers close and watch them.</p>
+      <div class="grid">
+        <article class="card"><h3>&#128737; Harden</h3>
+          <ul><li>Patch quickly; remove unused services and accounts.</li><li>Apply least privilege and network segmentation.</li><li>Change default credentials; disable insecure protocols.</li><li>Secure routers and switches: strong admin passwords, SSH not Telnet, updated firmware.</li></ul></article>
+        <article class="card"><h3>&#128065; Detect</h3>
+          <ul><li>Centralize logs (SIEM such as Wazuh or Security Onion, both free/open source).</li><li>Monitor failed logins, new admin accounts, unusual traffic.</li><li>Deploy IDS/IPS such as Suricata or Snort.</li><li>Use EDR/antivirus with central alerts.</li></ul></article>
+        <article class="card"><h3>&#128680; Respond</h3>
+          <ul><li>Have a written incident response plan.</li><li>Follow: Prepare, Identify, Contain, Eradicate, Recover, Lessons learned.</li><li>Preserve evidence; keep a timeline.</li><li>Practice with tabletop exercises.</li></ul></article>
+        <article class="card"><h3>&#127919; Hunt &amp; improve</h3>
+          <ul><li>Map detections to MITRE ATT&amp;CK techniques.</li><li>Proactively hunt for suspicious behavior.</li><li>Run purple-team exercises with pen testers.</li><li>Track metrics: time to detect and time to respond.</li></ul></article>
+      </div>
+
+      <h3>Quick hardening checklist</h3>
+      <ul class="checklist" id="checklist">
+        <li><label><input type="checkbox"> Operating systems and apps auto-update</label></li>
+        <li><label><input type="checkbox"> MFA enabled on email, admin and cloud accounts</label></li>
+        <li><label><input type="checkbox"> Router/switch default passwords changed, firmware current</label></li>
+        <li><label><input type="checkbox"> Firewall enabled; only needed ports open</label></li>
+        <li><label><input type="checkbox"> Offline/offsite backups tested</label></li>
+        <li><label><input type="checkbox"> Logs collected and reviewed</label></li>
+        <li><label><input type="checkbox"> Incident response contacts documented</label></li>
+        <li><label><input type="checkbox"> Staff awareness training done this year</label></li>
+      </ul>
+      <p class="progress">Completed: <strong id="checkCount">0</strong> / 8</p>
+    </section>
+
+    <section id="tools" class="section alt">
+      <h2>Interactive Tools</h2>
+      <p class="lead">Everything runs in your browser. Nothing you type is sent or stored anywhere.</p>
+      <div class="tool">
+        <h3>Password strength checker</h3>
+        <input type="password" id="pw" placeholder="Type a test password (do not use a real one)" autocomplete="off">
+        <div class="meter"><div id="meterBar"></div></div>
+        <p id="pwText" class="small">Start typing to see feedback.</p>
+      </div>
+      <div class="tool">
+        <h3>Phishing red-flag spotter</h3>
+        <p class="small">Paste a suspicious message to scan it for common warning signs.</p>
+        <textarea id="phishInput" rows="5" placeholder="Paste message text here..."></textarea>
+        <button class="btn" id="phishBtn">Scan message</button>
+        <ul id="phishOut" class="small"></ul>
+      </div>
+    </section>
+
+    <section id="quiz" class="section">
+      <h2>Test Your Knowledge</h2>
+      <div id="quizBox" class="tool"></div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <h2>Contact &amp; Services</h2>
+      <p class="lead">Want a security assessment, network hardening, or awareness training for your team?</p>
+      <p>Email: <a href="mailto:garduakarr@gmail.com">garduakarr@gmail.com</a><br>WhatsApp: <a href="https://wa.me/231776065206">+231 776 065 206</a></p>
+      <div class="cta">
+        <a class="btn" href="mailto:garduakarr@gmail.com?subject=Cybersecurity%20Inquiry">Email us</a>
+        <a class="btn ghost" href="https://wa.me/231776065206?text=Hello%2C%20I%20need%20cybersecurity%20help">WhatsApp</a>
+      </div>
+      <h3>Follow us</h3>
+      <p class="small">Get new tips, scam alerts and articles on our social pages.</p>
+      <div class="social">
+      <a class="social-link" href="https://www.facebook.com/jerry.gardua" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">Facebook</a>
+      <a class="social-link" href="https://www.linkedin.com/in/jerry-gardua-43a349131" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn">LinkedIn</a>
+    </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a class="social-link" href="https://www.facebook.com/jerry.gardua" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">Facebook</a>
+      <a class="social-link" href="https://www.linkedin.com/in/jerry-gardua-43a349131" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn">LinkedIn</a>
+    </div>
+    <p>&copy; <span id="year"></span> CyberAware Hub. For educational and defensive purposes only. Always get written permission before testing any system.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
